@@ -1,0 +1,11 @@
+# Local properties
+hw1-todolist/local.properties
+
+# Build files
+hw1-todolist/build/
+hw1-todolist/app/build/
+hw1-todolist/.gradle/
+
+# Gradle cache
+**/.gradle/
+**/build/
