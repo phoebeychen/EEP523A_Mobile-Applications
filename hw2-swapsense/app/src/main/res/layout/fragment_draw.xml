@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="60dp"
+    android:paddingHorizontal="8dp">
+
+    <!-- TODO: Add DrawingImageView -->
+    <com.example.swapsense.ui.DrawingImage.DrawingImageView
+        android:id="@+id/drawingImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- TODO: Add Color Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnColorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚫"
+            android:backgroundTint="#000000" />
+
+        <Button
+            android:id="@+id/btnColorRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔴"
+            android:backgroundTint="#FF0000"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnColorBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔵"
+            android:backgroundTint="#0000FF"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnColorGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🟢"
+            android:backgroundTint="#00FF00"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <!-- TODO: Add Button to select image -->
+    <!-- TODO: Add Button to save edited image -->
+    <!-- TODO: Add Button to reset image -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Image" />
+
+        <Button
+            android:id="@+id/btnSaveImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

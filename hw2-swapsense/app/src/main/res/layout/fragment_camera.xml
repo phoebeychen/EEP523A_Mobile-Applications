@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- 相机预览卡片 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#424242">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- 相机预览 -->
+            <androidx.camera.view.PreviewView
+                android:id="@+id/previewView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- 预览占位符（当相机未启动时显示） -->
+            <TextView
+                android:id="@+id/tvCameraPlaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="📷 Camera Preview"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- 按钮组 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <!-- Switch Camera 按钮 -->
+        <Button
+            android:id="@+id/btnSwitchCamera"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Switch Camera"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3"
+            android:layout_marginBottom="12dp"
+            app:cornerRadius="12dp"
+            android:elevation="2dp" />
+
+        <!-- Capture Photo 按钮 -->
+        <Button
+            android:id="@+id/btnCapture"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Capture Photo"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3"
+            app:cornerRadius="12dp"
+            android:elevation="2dp" />
+    </LinearLayout>
+
+    <!-- 拍摄照片显示卡片 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#E0E0E0">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- 拍摄的照片 -->
+            <ImageView
+                android:id="@+id/ivCapturedPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="Captured Photo" />
+
+            <!-- 占位文字 -->
+            <TextView
+                android:id="@+id/tvPhotoPlaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Captured photo will\nappear here"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:visibility="visible" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

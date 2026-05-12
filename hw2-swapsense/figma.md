@@ -1,0 +1,1 @@
+https://www.figma.com/make/qajZbDhXVL5ICQtDxuHV6K/Sensor-Display-Page?p=f&t=YOwWp83X2QUOdDKE-0&fullscreen=1
