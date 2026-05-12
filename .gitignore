@@ -9,3 +9,10 @@ hw1-todolist/.gradle/
 # Gradle cache
 **/.gradle/
 **/build/
+
+
+# hw2-swapsense specific
+hw2-swapsense/local.properties
+hw2-swapsense/.idea/
+hw2-swapsense/.cxx/
+hw2-swapsense/*.iml
